@@ -242,3 +242,60 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+
+
+# ================  Adding  " Samajf Manufacture 001 "  ========================
+
+
+app_include_css = "/assets/samajf_manufacture_001/css/font_style.css"
+
+
+# override_doctype_class = {
+#     "Work Order": "samajf_manufacture_001.overrides.work_order.CustomWorkOrder",
+#     "Stock Entry": "samajf_manufacture_001.overrides.stock_entry.CustomStockEntry",
+#     "BOM": "samajf_manufacture_001.overrides.update_bom.CustomBOM",
+#     "Production Plan": "samajf_manufacture_001.overrides.production_plan.CustomProductionPlan",
+# }
+
+
+doc_events = {
+    "BOM": {
+        "validate": [
+		# "on_update": [
+            "samajf_manufacture_001.samajf_manufacture_001.raw_material_items.create_print_msg",
+        ],
+		"on_update": [
+            "samajf_manufacture_001.samajf_manufacture_001.raw_material_items.activating_the_samajf_print_msg",
+        ],
+    },
+    # "Stock Entry": {
+    #     "validate": [
+    #         "samajf_manufacture_001.samajf_manufacture_001.raw_material_items.py.",
+    #     ],
+    # },
+    # "Work Order": {
+    #     "validate": [
+    #     ]
+    # }
+}
+
+doctype_js = {
+    "Stock Entry": "public/js/raw_material_items.js",
+    "Work Order": "public/js/raw_material_items.js",
+    "BOM": "public/js/raw_material_items.js",
+    "Item": "public/js/raw_material_items.js",
+    "Production Plan": "public/js/raw_material_items.js",
+}
+
+
+doctype_list_js = {
+    "Stock Entry": "public/js/raw_material_items.js",
+}
+
+
+fixtures = [{"dt": "Custom Field", "filters": [["module", "=", "Samajf Manufacture 001"]]}]
+
+
+
