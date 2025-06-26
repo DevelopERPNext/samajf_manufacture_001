@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-19 11:32:43.803894",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activating_the_samajf_manufacture_001_application",
+  "standard_deviation_global",
+  "deactivate_this_field_quantity_in_bom"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "activating_the_samajf_manufacture_001_application",
+   "fieldtype": "Check",
+   "label": "Activating the Samajf Manufacture 001 application"
+  },
+  {
+   "fieldname": "standard_deviation_global",
+   "fieldtype": "Float",
+   "label": "Standard Deviation Global"
+  },
+  {
+   "default": "0",
+   "fieldname": "deactivate_this_field_quantity_in_bom",
+   "fieldtype": "Check",
+   "label": "Deactivate this field \"Quantity\" in BOM"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-19 12:35:34.389681",
+ "modified_by": "Administrator",
+ "module": "Samajf Manufacture 001",
+ "name": "samajf_single_001",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

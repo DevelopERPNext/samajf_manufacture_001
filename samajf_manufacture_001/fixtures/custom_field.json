@@ -1,0 +1,42 @@
+[
+  {
+   "doctype": "Custom Field",
+   "dt": "BOM",
+   "module": "Samajf Manufacture 001",
+   "name": "item_name_a_raw_material_items_a_001",
+   "fieldname": "item_name_a_raw_material_items_a_001",
+   "fieldtype": "Data",
+   "fetch_from": "item.item_name",
+   "label": "Item Name",
+   "insert_after": "item",
+   "read_only": 1,
+   "sync_on_migrate": 1
+  },
+ {
+  "doctype": "Custom Field",
+  "dt": "BOM",
+  "module": "Samajf Manufacture 001",
+  "name": "bom_description_raw_material_items_a_001",
+  "fieldname": "bom_description_raw_material_items_a_001",
+  "fieldtype": "Data",
+  "label": "BOM Description",
+  "insert_after": "item_name_a_raw_material_items_a_001",
+  "default": 0,
+  "allow_on_submit": 0,
+  "read_only": 0,
+  "sync_on_migrate": 1
+ },
+  {
+   "doctype": "Custom Field",
+   "dt": "BOM Item",
+   "module": "Samajf Manufacture 001",
+   "name": "standard_deviation_raw_material_items_a_001",
+   "fieldname": "standard_deviation_raw_material_items_a_001",
+   "fieldtype": "Float",
+   "label": "Standard Deviation",
+   "insert_after": "uom",
+   "read_only": 0,
+   "in_list_view": 1,
+   "sync_on_migrate": 1
+  }
+]
